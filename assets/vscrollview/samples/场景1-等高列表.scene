@@ -465,7 +465,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 579.4979999999998,
-      "height": 411.425
+      "height": 500
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -595,17 +595,16 @@
     "content": null,
     "useVirtualList": true,
     "direction": 0,
+    "enterAnimationType": 1,
     "itemPrefab": {
       "__uuid__": "d9a8c59c-c0e2-4d67-b447-c11d76418f6e",
       "__expectedType__": "cc.Prefab"
     },
     "useDynamicSize": false,
-    "useDynamicHeight": false,
     "itemPrefabs": [],
     "gridCount": 1,
     "gridSpacing": 8,
     "spacing": 8,
-    "totalCount": 100,
     "buffer": 0,
     "pixelAlign": true,
     "inertiaDampK": 1,

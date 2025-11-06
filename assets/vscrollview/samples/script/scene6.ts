@@ -1,12 +1,12 @@
 import { _decorator, Component, game, Label, Node, Sprite, SpriteFrame } from 'cc';
-import { VirtualScrollView } from '../../VScrollView';
+import { VScrollView } from '../../VScrollView';
 import UIButton from './UIButton';
 const { ccclass, property } = _decorator;
 
 @ccclass('scene6')
 export class scene6 extends Component {
-  @property(VirtualScrollView)
-  vlist: VirtualScrollView | null = null;
+  @property(VScrollView)
+  vlist: VScrollView | null = null;
 
   //列表数据
   private data: any[] = [];
@@ -80,7 +80,7 @@ export class scene6 extends Component {
       });
 
       //有时候,列表在顶部,你要新增一项,这里就是先设置列表跳到旧的底部,再刷新滚动到新的底部,这就很自然.
-      this.vlist.flashToBottom();
+      this.vlist.scrollToBottom();
       this.vlist.refreshList(this.data);
       this.vlist.scrollToBottom(true);
     });

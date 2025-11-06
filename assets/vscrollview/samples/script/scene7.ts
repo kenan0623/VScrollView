@@ -1,12 +1,12 @@
 import { _decorator, Component, game, instantiate, Label, Node } from 'cc';
-import { VirtualScrollView } from '../../VScrollView';
+import { VScrollView } from '../../VScrollView';
 import UIButton from './UIButton';
 const { ccclass, property } = _decorator;
 
 @ccclass('scene7')
 export class scene7 extends Component {
-  @property(VirtualScrollView)
-  vlist: VirtualScrollView | null = null;
+  @property(VScrollView)
+  vlist: VScrollView | null = null;
 
   //列表数据
   private data: any[] = [];

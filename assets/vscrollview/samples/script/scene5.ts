@@ -12,14 +12,14 @@ import {
   UITransform,
   Vec3,
 } from 'cc';
-import { VirtualScrollView } from '../../VScrollView';
+import { VScrollView } from '../../VScrollView';
 import UIButton from './UIButton';
 const { ccclass, property } = _decorator;
 
 @ccclass('scene5')
 export class scene5 extends Component {
-  @property(VirtualScrollView)
-  vlist: VirtualScrollView | null = null;
+  @property(VScrollView)
+  vlist: VScrollView | null = null;
 
   private chatData: Array<{
     player: number;
@@ -134,7 +134,7 @@ export class scene5 extends Component {
       calculatedHeight: 0,
     });
 
-    this.vlist.flashToBottom();
+    this.vlist.scrollToBottom();
 
     // 更新列表
     this.vlist.refreshList(this.chatData.length);

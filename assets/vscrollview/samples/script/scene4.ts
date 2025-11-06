@@ -1,5 +1,5 @@
 import { _decorator, Component, game, Label, Node, Sprite, SpriteFrame } from 'cc';
-import { VirtualScrollView } from '../../VScrollView';
+import { VScrollView } from '../../VScrollView';
 import UIButton from './UIButton';
 const { ccclass, property } = _decorator;
 
@@ -8,8 +8,8 @@ export class scene4 extends Component {
   @property([SpriteFrame])
   spfs: SpriteFrame[] = [];
 
-  @property(VirtualScrollView)
-  vlist: VirtualScrollView | null = null;
+  @property(VScrollView)
+  vlist: VScrollView | null = null;
 
   //列表数据
   private data: any[] = [];
@@ -69,7 +69,7 @@ export class scene4 extends Component {
         data1: `第 ${this.data.length + 1} 项`,
         icon: this.data.length % this.spfs.length,
       });
-      this.vlist.flashToBottom();
+      this.vlist.scrollToBottom();
       this.vlist.refreshList(this.data);
       this.vlist.scrollToBottom(true);
     });

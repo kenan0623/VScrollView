@@ -600,7 +600,6 @@
       "__expectedType__": "cc.Prefab"
     },
     "useDynamicSize": true,
-    "useDynamicHeight": true,
     "itemPrefabs": [
       {
         "__uuid__": "d9a8c59c-c0e2-4d67-b447-c11d76418f6e",
@@ -618,9 +617,9 @@
     "gridCount": 1,
     "gridSpacing": 8,
     "spacing": 8,
-    "totalCount": 100,
     "buffer": 0,
     "pixelAlign": true,
+    "enterAnimationType": 2,
     "inertiaDampK": 1,
     "springK": 160,
     "springC": 26,

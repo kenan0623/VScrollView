@@ -710,17 +710,16 @@
     "content": null,
     "useVirtualList": true,
     "direction": 0,
+    "enterAnimationType": 4,
     "itemPrefab": {
       "__uuid__": "63416188-ef94-4036-9afd-e8734bd3b4c9",
       "__expectedType__": "cc.Prefab"
     },
     "useDynamicSize": false,
-    "useDynamicHeight": false,
     "itemPrefabs": [],
     "gridCount": 3,
     "gridSpacing": 8,
     "spacing": 8,
-    "totalCount": 50,
     "buffer": 0,
     "pixelAlign": true,
     "inertiaDampK": 1,
