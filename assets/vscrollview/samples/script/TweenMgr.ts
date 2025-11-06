@@ -1,10 +1,4 @@
-/** 
- * 基于引擎Tween封装的易用性缓动系统
- * @author: deng
- * @since: 2025-04-14 11:20:53
-* @copyright: gzyuanjin
- * @modify: 
- */
+/**  * 基于引擎Tween封装的易用性缓动系统 */
 
 import { __private, Component, Node, Tween, tween, TweenEasing, UIOpacity, UITransform, Vec3, Widget } from "cc";
 
